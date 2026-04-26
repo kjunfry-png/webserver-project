@@ -1,6 +1,6 @@
 Project: Multi-threaded Web Server
-Name: 김준형
-Student ID: XXXXXXXX
+Name: KIM JUNHYEONG
+Student ID: 24134503D
 
 ------------------------------------
 1. Description
@@ -8,10 +8,11 @@ Student ID: XXXXXXXX
 This project implements a multi-threaded Web server using Python socket programming.
 
 The server supports:
-- GET and HEAD methods
+- GET and HEAD methods (HEAD returns only header information)
 - Text and image files
 - HTTP status codes: 200, 400, 403, 404, 304
 - Last-Modified and If-Modified-Since
+- Persistent and non-persistent connections (keep-alive / close)
 - Logging of client requests
 
 ------------------------------------
@@ -20,7 +21,7 @@ The server supports:
 1. Open terminal
 2. Navigate to project folder
 
-   cd webserver_project
+   cd web_server_project
 
 3. Run the server
 
@@ -34,7 +35,7 @@ The server supports:
 3. File Structure
 ------------------------------------
 server.py        : main server program
-www/             : web files directory
+www/             : web files directory (contains index.html and image.jpg)
 server_log.txt   : log file
 README.txt       : instructions
 
@@ -43,3 +44,4 @@ README.txt       : instructions
 ------------------------------------
 - Default port: 8080
 - Server runs on localhost (127.0.0.1)
+- Supports HTTP persistent connection (keep-alive) and non-persistent (close)
